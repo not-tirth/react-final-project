@@ -35,7 +35,7 @@ export default function App() {
 
   return (
     <div className="app">
-      {/* NAVBAR */}
+  
       <div className="navbar">
         <h2>CYRO.SE</h2>
 
@@ -53,7 +53,6 @@ export default function App() {
         />
       </div>
 
-      {/* FLEX MOVIES */}
       <div className="movies">
         {movies.map((m) => (
           <div key={m.id} className="card" onClick={() => setSelected(m)}>
@@ -66,7 +65,7 @@ export default function App() {
         ))}
       </div>
 
-      {/* MODAL */}
+  
       {selected && (
         <div className="modal" onClick={() => setSelected(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
